@@ -54,7 +54,7 @@ body {
   color: rgba(255, 183, 66, 1);
 }
 
-.header__btn a {
+.hire-me-btn a {
   font-family: "Poppins", sans-serif;
   color: rgba(33, 37, 41, 1);
   font-size: 1.8rem;
@@ -64,7 +64,6 @@ body {
   padding: 12px 26px 12px 26px;
   text-decoration: none;
   background-color: #ffb742;
-  width: 121px;
   border-radius: 50px;
   box-sizing: border-box;
   display: inline-block;
@@ -115,10 +114,10 @@ body {
   line-height: 51px;
 }
 
-.hero__cards{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 136px;
+.hero__cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 136px;
 }
 
 .card {
@@ -166,60 +165,64 @@ body {
 }
 
 /* -----About me----- */
- 
+
 .about {
-    max-width: 1384px;
-    
-    display: flex;
-    justify-content: space-around;
-    margin-top: 221px;
-    box-sizing: border-box;
+  max-width: 1384px;
+
+  display: flex;
+  justify-content: space-around;
+  margin-top: 221px;
+  box-sizing: border-box;
 }
-.foto{
-    padding-top: 33px;
+.foto {
+  padding-top: 33px;
 }
-.about__me{
-   max-width: 672px;
-   padding-left: 74px;
+.about__me {
+  max-width: 672px;
+  padding-left: 74px;
 }
 
-.about__upper-title {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 30px;
-    color: rgba(255, 183, 66, 1);
-    width: 148px;
-    height: 42px;
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 50px;
-    text-align: center;
-    display: inline-block;
-    padding: 6px 0px;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.upper-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 30px;
+  color: rgba(255, 183, 66, 1);
+  width: 148px;
+  height: 42px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 50px;
+  text-align: center;
+  display: inline-block;
+  padding: 6px 0px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
 }
 
-.about-title{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 4.8rem;
-    line-height: 30px;
-    color: var(--main-text-color);
-    margin: 0; 
-    margin-top: 10px;
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 30px;
+  color: var(--main-text-color);
+  margin: 0;
+  margin-top: 10px;
 }
 
-.about-text {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 1.6rem;
-    line-height: 30px;
-    color: rgba(212, 212, 212, 1);
-    margin: 30px 0px 50px 0px;
+.text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 30px;
+  color: rgba(212, 212, 212, 1);
+  margin: 30px 0px 50px 0px;
 }
 
-.about__btn > a {
+.hire-me-btn a {
+  min-width: 148px;
+}
+/* .about__btn > a {
     font-family: "Poppins", sans-serif;
   color: rgba(33, 37, 41, 1);
   font-size: 1.8rem;
@@ -233,6 +236,61 @@ body {
   min-width: 148px;
   border-radius: 50px;
   display: inline-block;
-}
+  box-sizing: border-box;
+} */
 
 /* ----- Skills ----- */
+
+.skills {
+  max-width: 1339px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 18px;
+  justify-content: space-between;
+}
+
+.my-skills {
+  max-width: 672px;
+}
+
+.my-skills h2 {
+  line-height: 56px;
+  max-width: 518px;
+}
+
+.my-skills p {
+  margin: 24px 0px 70px 0px;
+}
+
+.cards {
+  display: flex;
+  max-width: 560px;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  height: 176px;
+  row-gap: 16px;
+  box-sizing: border-box;
+}
+
+.bkg {
+  background-image: url(../img/cards-background.svg);
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.bkg:hover {
+  background: #ffb742;
+}
+
+.skills__card {
+  padding: 16px;
+}
+
+.sass {
+  padding: 22px 16px;
+}
+
+.figma {
+  padding: 16px 24px;
+}
