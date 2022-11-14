@@ -24,7 +24,7 @@ body {
 .header {
   max-width: 1342px;
   margin: 0 auto;
-  padding-top: 17px;
+  padding-top: 25px;
   box-sizing: border-box;
 }
 
@@ -34,8 +34,8 @@ body {
   align-items: center;
 }
 
-.logo{
-animation: logo 3s linear infinite;
+.logo {
+  animation: logo 3s linear infinite;
 }
 
 .nav__list {
@@ -93,7 +93,6 @@ animation: logo 3s linear infinite;
 .hero {
   max-width: 1342px;
   margin: 0 auto;
-  
 }
 
 .hero__content {
@@ -120,7 +119,6 @@ animation: logo 3s linear infinite;
   line-height: 91px;
   color: var(--main-text-color);
   margin: 0;
- 
 }
 
 .hero__sub-title {
@@ -185,7 +183,6 @@ animation: logo 3s linear infinite;
 
 .about {
   max-width: 1384px;
-
   display: flex;
   justify-content: space-around;
   margin-top: 221px;
@@ -226,7 +223,6 @@ animation: logo 3s linear infinite;
   color: var(--main-text-color);
   margin: 0;
   margin-top: 10px;
-  
 }
 
 .text {
@@ -236,7 +232,6 @@ animation: logo 3s linear infinite;
   line-height: 30px;
   color: rgba(212, 212, 212, 1);
   margin: 30px 0px 50px 0px;
-
 }
 
 .hire-me-btn a {
@@ -248,7 +243,6 @@ animation: logo 3s linear infinite;
   transition: 0.3s linear;
   box-shadow: 0px 0px 30px #ffb742;
   border-radius: 50px;
-  
 }
 
 /* ----- Skills ----- */
@@ -282,6 +276,7 @@ animation: logo 3s linear infinite;
   height: 176px;
   row-gap: 16px;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .bkg {
@@ -322,6 +317,7 @@ animation: logo 3s linear infinite;
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
+  flex-wrap: wrap;
 }
 
 .my-works__list li {
@@ -352,6 +348,7 @@ animation: logo 3s linear infinite;
   margin: 0 auto;
   justify-content: space-between;
   margin-top: 48px;
+  flex-wrap: wrap;
 }
 
 .my-works__cards img {
@@ -362,6 +359,7 @@ animation: logo 3s linear infinite;
   display: flex;
   flex-direction: column;
   row-gap: 31px;
+  flex-wrap: wrap;
 }
 
 .work-cards div:hover {
@@ -388,6 +386,7 @@ animation: logo 3s linear infinite;
   display: flex;
   justify-content: space-between;
   margin-top: 90px;
+  flex-wrap: wrap;
 }
 
 .customers img {
@@ -521,13 +520,101 @@ animation: logo 3s linear infinite;
 
 @keyframes logo {
   from,
-  to{
+  to {
     background-color: #212529;
-    box-shadow: 0px 0px 10px #FFB742;
+    box-shadow: 0px 0px 10px #ffb742;
     border-radius: 20px;
   }
-  100%{
-    transform: rotate3d(0,0,10, 360deg);
+  100% {
+    transform: rotate3d(0, 0, 10, 360deg);
   }
 }
 
+@media screen and (max-width: 1440px) {
+  .wrapper {
+    max-width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .header {
+    max-width: 1140px;
+  }
+  .hero__cards {
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 31%;
+  }
+  .skills {
+    max-width: 1150px;
+  }
+  .about__me {
+    max-width: 650px;
+    padding-right: 40px;
+  }
+  .my-skills {
+    max-width: 550px;
+  }
+  .my-works__cards {
+    max-width: 1185px;
+  }
+  .customers {
+    max-width: 1170px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .header {
+    max-width: 1090px;
+  }
+  .hero__cards {
+    max-width: 1250px;
+    justify-content: space-evenly;
+  }
+  .card {
+    width: 30%;
+  }
+  .skills {
+    max-width: 1110px;
+  }
+  .about__me {
+    max-width: 650px;
+    padding-right: 20px;
+  }
+  .my-skills {
+    max-width: 500px;
+  }
+  .my-works__cards {
+    max-width: 1150px;
+    justify-content: space-evenly;
+  }
+  .right-work-card {
+    margin-top: 35px;
+  }
+  .customers {
+    max-width: 1160px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+  .header {
+    max-width: 1060px;
+  }
+  .card {
+    width: 30%;
+  }
+  .customers {
+    max-width: 1100px;
+  }
+  .customers__cards {
+    justify-content: space-evenly;
+  }
+  .customers__cards div:nth-child(3) {
+    margin-top: 35px;
+  }
+}
